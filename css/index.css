@@ -189,6 +189,10 @@ body {
   line-height: 28px;
 }
 
+.slider__item-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1023px) {
   .header__logo {
     width: 92px;
@@ -375,5 +379,9 @@ body {
   .card__link {
     width: 118px;
     height: 118px;
+  }
+
+  .slider__item-mobile {
+    display: block;
   }
 }
