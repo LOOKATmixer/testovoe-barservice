@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Montserrat-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'RF Rufo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./RFRufo-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'RF Rufo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./RFRufo-Bold.woff) format('woff');
+}
