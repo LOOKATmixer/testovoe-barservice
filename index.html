@@ -14,7 +14,16 @@
         <div class="container">
           <div class="header__body">
             <div class="header__phone">
-              <img src="./images/phone.svg" />
+              <a href="#">
+                <img class="phone" src="./images/phone.svg" />
+              </a>
+              <a href="#">
+                <img
+                  class="cart"
+                  src="./images/cart.svg"
+                  alt="Корзина покупателя"
+                />
+              </a>
             </div>
             <a href="/">
               <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
@@ -46,16 +55,14 @@
                   alt="Корзина покупателя"
                 />
               </a>
-              <a class='link' href="#">
+              <a class="link" href="#">
                 <p class="contacts">+7 (3452)500-006</p>
               </a>
             </div>
           </div>
         </div>
-      </header>
-      <main class="content">
         <div class="container">
-          <section class="flex">
+          <div class="flex">
             <div class="title__info">
               <h1 class="title">мы такие классные прям не могу</h1>
               <p class="title__description">
@@ -89,115 +96,272 @@
                 </p>
               </a>
             </div>
-          </section>
+          </div>
         </div>
-        <section class="slider">
-          <div class="slider__item">
-            <div class="card">
-              <a href="#" class="card__link">
-                <img
-                  src="./images/bar-ded.jpg"
-                  alt="Бар Ржавый дед"
-                  class="card__image"
-                />
-                <h2 class="card__title">Бар Ржавый дед</h2>
-                <p class="card__description">
-                  Пройди обучение очно в школе барменов или онлайн
-                </p>
-              </a>
+      </header>
+      <main class="content">
+
+        <!--Десктопный слайдер-->
+        <div class="desktop-slider-w">
+          <section class="slider desktop-slider">
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/bar-ded.jpg"
+                    alt="Бар Ржавый дед"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Бар Ржавый дед</h2>
+                  <p class="card__description">
+                    Пройди обучение очно в школе барменов или онлайн
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/barista.jpg"
+                    alt="кофемашина"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Обучение Бариста</h2>
+                  <p class="card__description">
+                    Пройди обучение очно в школе барменов или онлайн
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/repair.jpg"
+                    alt="обслуживание"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Сервис</h2>
+                  <p class="card__description">
+                    Собственный сервисный цех в городе
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/girl.jpg"
+                    alt="девушка бариста"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">СОбственный кофе</h2>
+                  <p class="card__description">
+                    Кофе который мы производим и продаем
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/bar.jpg"
+                    alt="девушка бариста"
+                    class="card__image"
+                  />
+                  <h2 class="card__title card__title-slider">GRANNYS BAR</h2>
+                  <p class="card__description margin">
+                    Кофе который мы производим и продаем
+                  </p>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <!--Мобильный слайдер-->
+        <div class="mobile-slider-w">
+          <section class="slider mobile-slider">
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/coffe.jpg"
+                    alt="кофемашина"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">продажа</h2>
+                  <p class="card__description">
+                    Профессиональные кофемашины с бесплатной доставкой по РФ
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item slider__item-mobile">
+              <div class="card slider__item-mobile">
+                <a href="#" class="card__link slider__item-mobile">
+                  <img
+                    src="./images/rent.jpg"
+                    alt="кофемашина"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">аренда</h2>
+                  <p class="card__description">
+                    Бесплатная аренда кофемашины для ресторана или офиса
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/bar-ded.jpg"
+                    alt="Бар Ржавый дед"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Бар Ржавый дед</h2>
+                  <p class="card__description">
+                    Пройди обучение очно в школе барменов или онлайн
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/barista.jpg"
+                    alt="кофемашина"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Обучение Бариста</h2>
+                  <p class="card__description">
+                    Пройди обучение очно в школе барменов или онлайн
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/repair.jpg"
+                    alt="обслуживание"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">Сервис</h2>
+                  <p class="card__description">
+                    Собственный сервисный цех в городе
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/girl.jpg"
+                    alt="девушка бариста"
+                    class="card__image"
+                  />
+                  <h2 class="card__title">СОбственный кофе</h2>
+                  <p class="card__description">
+                    Кофе который мы производим и продаем
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="card">
+                <a href="#" class="card__link">
+                  <img
+                    src="./images/bar.jpg"
+                    alt="девушка бариста"
+                    class="card__image"
+                  />
+                  <h2 class="card__title card__title-slider">GRANNYS BAR</h2>
+                  <p class="card__description margin">
+                    Кофе который мы производим и продаем
+                  </p>
+                </a>
+              </div>
+            </div>
+          </section>
+          <div class="opacity"></div>
+        </div>
+        <!--О компании-->
+        <a class='link' href='#'>
+          <div class="about">
+            <div class="about__container">
+              <span class='red-line'></span>
+              <p class="about__title">О Компании</p>
+            </div>
+            <img src='../images/aboutteam.png' alt='Команда Bar-Service' class="about__team" />
+          </div>
+        </a>
+        <!--Услуги-->
+        <div class="services">
+          <div class="services__container-title">
+            <span></span>
+            <p class="services__title">полный сектор услуг для ресторанной индустрии:</p>
+          </div>
+          <div class="services__container">
+            <div class="service__card">
+              <h3 class="service__title">
+                Собственный 
+                учебный центр
+              </h3>
+              <p class="service__description">
+                который действует с 2005 года, именно 
+              </p>
+              <p class="service__description">
+                мы формировали уровень барной и кофейной индустрии в нашем городе.
+              </p>
+            </div>
+            <div class="service__card">
+              <h3 class="service__title">
+                Собственный 
+                сервисный центр
+              </h3>
+              <p class="service__description">
+                Квалифицированные инженеры быстро и качественно
+              </p>
+              <p class="service__description">
+                произведут ремонт кофейного оборудования любой сложности
+              </p>
+            </div>
+            <div class="service__card">
+              <h3 class="service__title">
+                Собственное 
+                производство
+              </h3>
+              <p class="service__description">
+                Кофе, чая и пищевого льда. Мы производим продукцию, только на самом лучшем оборудовании и
+              </p>
+              <p class="service__description">
+                используем только качественное и дорогое сырье. 
+              </p>
+            </div>
+            <div class="service__card">
+              <h3 class="service__title">
+                Лучшая команда
+                профессионалов
+              </h3>
+              <p class="service__description">
+                В нашей команде лучшие специалисты 
+                в каждой области. 
+              </p>
+              <p class="service__description">
+                К примеру у нашего обжарщика опыт работы составляет 
+                20 лет и проходила обучение в Италии.
+              </p>
             </div>
           </div>
-          <div class="slider__item">
-            <div class="card">
-              <a href="#" class="card__link">
-                <img
-                  src="./images/barista.jpg"
-                  alt="кофемашина"
-                  class="card__image"
-                />
-                <h2 class="card__title">Обучение Бариста</h2>
-                <p class="card__description">
-                  Пройди обучение очно в школе барменов или онлайн
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="card">
-              <a href="#" class="card__link">
-                <img
-                  src="./images/repair.jpg"
-                  alt="обслуживание"
-                  class="card__image"
-                />
-                <h2 class="card__title">Сервис</h2>
-                <p class="card__description">
-                  Собственный сервисный цех в городе
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="card">
-              <a href="#" class="card__link">
-                <img
-                  src="./images/girl.jpg"
-                  alt="девушка бариста"
-                  class="card__image"
-                />
-                <h2 class="card__title">СОбственный кофе</h2>
-                <p class="card__description">
-                  Кофе который мы производим и продаем
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="slider__item">
-            <div class="card">
-              <a href="#" class="card__link">
-                <img
-                  src="./images/bar.jpg"
-                  alt="девушка бариста"
-                  class="card__image"
-                />
-                <h2 class="card__title card__title-slider">GRANNYS BAR</h2>
-                <p class="card__description margin">
-                  Кофе который мы производим и продаем
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="slider__item slider__item-mobile">
-            <div class="card slider__item-mobile">
-              <a href="#" class="card__link slider__item-mobile">
-                <img
-                  src="./images/coffe.jpg"
-                  alt="кофемашина"
-                  class="card__image"
-                />
-                <h2 class="card__title">продажа</h2>
-                <p class="card__description">
-                  Профессиональные кофемашины с бесплатной доставкой по РФ
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="slider__item slider__item-mobile">
-            <div class="card slider__item-mobile">
-              <a href="#" class="card__link slider__item-mobile">
-                <img
-                  src="./images/rent.jpg"
-                  alt="кофемашина"
-                  class="card__image"
-                />
-                <h2 class="card__title">аренда</h2>
-                <p class="card__description">
-                  Бесплатная аренда кофемашины для ресторана или офиса
-                </p>
-              </a>
-            </div>
-          </div>
-        </section>
+        </div>
+
       </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

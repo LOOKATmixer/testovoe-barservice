@@ -99,6 +99,7 @@ body {
 
 .flex {
   display: flex;
+  justify-content: center;
 }
 
 .title__info {
@@ -128,8 +129,6 @@ body {
 .card {
   position: relative;
   padding-right: 20px;
-  width: 320px;
-  height: 320px;
 }
 
 .card__link {
@@ -137,7 +136,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 320px;
-  height: 322px;
+  height: 320px;
   box-sizing: border-box;
   max-width: 100%;
   position: relative;
@@ -204,6 +203,71 @@ body {
   display: none;
 }
 
+.opacity {
+  display: none;
+}
+
+.desktop-slider-w {
+  display: block;
+}
+.mobile-slider-w {
+  display: none;
+}
+.mobile-slider-w .slick-slide > div:nth-child(2) {
+ margin-top:20px;
+}
+
+/* О Компании -------*/
+
+.about {
+  position: relative;
+  background: url(../images/team.png);
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 714px;
+}
+
+.about__team {
+  display: block;
+  margin: 0 auto; 
+  max-width: 90%;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.about__title {
+  position: absolute;
+  margin: 0;
+  font-size: 80px;
+  line-height: 83px;
+  text-transform: uppercase;
+  padding-left: 150px;
+  width: 320px;
+}
+
+.about__container {
+  position: relative;
+  max-width: 600px;
+  left: 72px;
+  top: 79px;
+}
+
+.red-line {
+  background-color: #fb4f50;
+  position: absolute;
+  width: 107px;
+  height: 2px;
+  margin-top: 40px;
+}
+
+/* Услуги -------*/
+
+.services {
+  
+}
+
+
 @media screen and (max-width: 1023px) {
   .header__logo {
     width: 92px;
@@ -215,8 +279,8 @@ body {
   }
 
   .cart {
-    width: 30px;
-    height: 30px;
+    width: 48px;
+    height: 48px;
   }
 
   .contacts {
@@ -237,15 +301,10 @@ body {
     display: none;
   }
 
-  .card {
-    width: 210px;
-    height: 210px;
-  }
-
   .card__link {
+    width: 220px;
+    height: 220px;
     justify-content: center;
-    width: 210px;
-    height: 210px;
   }
 
   .card__title {
@@ -258,11 +317,31 @@ body {
   .card__description {
     display: none;
   }
+
+/* О Компании -------*/
+
+  .about__title {
+    position: relative;
+    margin: 0;
+    font-size: 35px;
+    line-height: 42px;
+    padding-left: 20px;
+  }
+
+  .about__container {
+    position: relative;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .about__container span {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-image: url('./images/background.jpg');
+  .header {
+    background-image: url('../images/background.jpg');
     background-size: 100%;
   }
   body.lock {
@@ -273,9 +352,15 @@ body {
   }
   .header__logo {
     margin-top: 50px;
+    margin-right: 43px;
+  }
+  .phone {
+    width: 20px;
+    height: 20px;
   }
   .header__phone {
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
     top: -30px;
     left: 20px;
@@ -370,29 +455,62 @@ body {
     margin: 0 0 20px 0;
   }
 
+  .cart {
+    padding-left: 15px;
+    width: 28px;
+    height: 28px;
+  }
+
   .title {
     margin-bottom: 65px;
   }
-
-  .card {
-    width: 118px;
-    height: 118px;
-  }
-
-  .card__title {
-    padding-top: 40%;
-  }
+  
 
   .card-static {
     display: none;
   }
 
   .card__link {
-    width: 118px;
     height: 118px;
   }
 
   .slider__item-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-slider-w {
+    display: none;
+  }
+  .mobile-slider-w {
     display: block;
+    position: relative;
+  }
+
+  .opacity {
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 46%;
+    bottom: 0;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+
+  }
+
+  /* О Компании мобилка -------*/
+
+  .about {
+    background: none;
+  }
+
+  .about__team {
+    max-width: 100%;
+  }
+
+  .about__container {
+    position: relative;
+    left: 10px;
+    top: 20px;
   }
 }

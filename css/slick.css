@@ -1,7 +1,7 @@
 /* Slider */
 
 .slider {
-  margin-top: 20px;
+  margin-top: 33px;
 }
 
 .slider__item {
@@ -138,6 +138,8 @@
   background: url(../images/arrow-r.svg) 0 0 / 100% no-repeat;
 }
 
+/* ручные */
+
 @media screen and (max-width: 1600px) {
   .slider .slick-arrow.slick-prev {
     left: 5%;
@@ -154,9 +156,9 @@
   }
 
   .slider .slick-arrow.slick-next {
-    top: 86%;
+    top: 84%;
     z-index: 1;
-    right: 13%;
+    right: 18%;
     font-size: 0;
     width: 12px;
     height: 28px;
@@ -165,7 +167,7 @@
     transition: linear 0.4s;
   }
 
-  .slider__item.slick-active {
+  .slider__item {
     opacity: 1;
   }
 }
