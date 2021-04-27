@@ -224,8 +224,6 @@ body {
   background: url(../images/team.png);
   background-size: cover;
   box-sizing: border-box;
-  width: 100%;
-  max-height: 714px;
 }
 
 .about__team {
@@ -236,19 +234,21 @@ body {
   overflow: hidden;
 }
 
-.about__title {
+.container__title {
   position: absolute;
   margin: 0;
+  font-weight: 400;
   font-size: 80px;
   line-height: 83px;
   text-transform: uppercase;
   padding-left: 150px;
-  width: 320px;
 }
 
-.about__container {
+.block__title-container {
   position: relative;
-  max-width: 600px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
   left: 72px;
   top: 79px;
 }
@@ -256,17 +256,69 @@ body {
 .red-line {
   background-color: #fb4f50;
   position: absolute;
+  top: 50%;
+  left: 0;
   width: 107px;
   height: 2px;
-  margin-top: 40px;
 }
 
 /* Услуги -------*/
 
 .services {
-  
+  display: block;
+  position: relative;
+  background: url(../images/services-background.png);
+  background-size: cover;
+  box-sizing: border-box;
 }
 
+.service__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto 0;
+}
+
+.card__item {
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.service__card {
+  display: block;
+  margin: 0 auto;
+  width: 278px;
+  height: 312px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.service__title {
+  padding: 25px 25px 0 21px;
+  font-family: 'Montserrat';
+  margin: 0;
+  color: #fb4f50;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.service__description {
+  margin: 28px 26px 0;
+  font-family: 'Montserrat';
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.service__description:last-child {
+  margin: 20px 26px 78px;
+}
 
 @media screen and (max-width: 1023px) {
   .header__logo {
@@ -318,9 +370,15 @@ body {
     display: none;
   }
 
+/* Заголовок с красной линией -------*/
+
+  .red-line {
+    display: none;
+  }
+
 /* О Компании -------*/
 
-  .about__title {
+  .container__title {
     position: relative;
     margin: 0;
     font-size: 35px;
@@ -328,15 +386,14 @@ body {
     padding-left: 20px;
   }
 
-  .about__container {
+  .block__title-container {
     position: relative;
     margin: 0;
     padding-top: 0;
   }
 
-  .about__container span {
-    display: none;
-  }
+/* Услуги -------*/
+
 }
 
 @media screen and (max-width: 767px) {
@@ -495,7 +552,6 @@ body {
     bottom: 0;
     right: 20px;
     background: rgba(0, 0, 0, 0.8);
-
   }
 
   /* О Компании мобилка -------*/
@@ -508,9 +564,16 @@ body {
     max-width: 100%;
   }
 
-  .about__container {
+  .block__title-container {
     position: relative;
     left: 10px;
     top: 20px;
   }
+
+  /* Услуги мобилка -------*/
+
+.service__cards {
+  margin: 90px auto 0;
+}
+
 }
