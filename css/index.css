@@ -203,7 +203,7 @@ body {
   display: none;
 }
 
-.opacity {
+.opacity-slide {
   display: none;
 }
 
@@ -230,7 +230,6 @@ body {
   display: block;
   margin: 0 auto; 
   max-width: 90%;
-  min-height: 180px;
   overflow: hidden;
 }
 
@@ -544,14 +543,14 @@ body {
     position: relative;
   }
 
-  .opacity {
+  .opacity-slide {
     display: block;
     position: absolute;
     width: 30%;
     height: 46%;
     bottom: 0;
     right: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
 
   /* О Компании мобилка -------*/

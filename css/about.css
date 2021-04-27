@@ -1,0 +1,43 @@
+.header__about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/header-about.png');
+  background-size: 100%;
+}
+
+.title__container {
+  max-width: 1300px;
+  display: flex;
+}
+
+.title__about {
+  font-size: 112px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 118px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .title__container {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title__about {
+    font-size: 46px;
+    letter-spacing: 0.025em;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/background.jpg');
+  }
+}
