@@ -215,7 +215,7 @@ body {
   display: none;
 }
 .mobile-slider-w .slick-slide > div:nth-child(2) {
- margin-top:20px;
+  margin-top: 20px;
 }
 
 /* О Компании -------*/
@@ -229,7 +229,7 @@ body {
 
 .about__team {
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 90%;
   overflow: hidden;
 }
@@ -257,7 +257,6 @@ body {
   display: flex;
   align-items: center;
   max-width: 900px;
-
 }
 
 .red-line {
@@ -376,13 +375,13 @@ body {
     display: none;
   }
 
-/* Заголовок с красной линией -------*/
+  /* Заголовок с красной линией -------*/
 
   .red-line {
     display: none;
   }
 
-/* О Компании -------*/
+  /* О Компании -------*/
 
   .container__title {
     position: relative;
@@ -398,8 +397,7 @@ body {
     padding-top: 0;
   }
 
-/* Услуги -------*/
-
+  /* Услуги -------*/
 }
 
 @media screen and (max-width: 767px) {
@@ -527,7 +525,6 @@ body {
   .title {
     margin-bottom: 65px;
   }
-  
 
   .card-static {
     display: none;
