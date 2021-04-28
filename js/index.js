@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('.header__burger,.header__menu').toggleClass('active');
   });
   
-  $('.desktop-slider').slick({
+    $('.main__desktop-slider').slick({
     adaptiveHeight: true,
     slidesToShow: 3,
     //autoplay: false,
@@ -18,7 +18,7 @@ $(document).ready(function () {
     rows: 1,
   });
   
-  $('.mobile-slider').slick({
+  $('.main__mobile-slider').slick({
     adaptiveHeight: true,
     slidesToShow: 3,
     //autoplay: false,
@@ -28,5 +28,18 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: false,
     rows: 2,
+  });
+
+  $('.about__mobile-slider').slick({
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          infinite: false,
+          //autoplay: false,
+          //autoplaySpeed: 1500,
+          draggable: false,
+          centerMode: true,
+          variableWidth: false,
+          fade: true,
   });
 });

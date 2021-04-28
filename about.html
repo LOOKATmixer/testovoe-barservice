@@ -9,67 +9,202 @@
     <title>О Компании</title>
   </head>
   <body>
-    <div>
-      <header class="header__about">
-        <div class="container">
-          <div class="header__body">
-            <div class="header__phone">
-              <a href="#">
-                <img class="phone" src="./images/phone.svg" />
-              </a>
-              <a href="#">
-                <img
-                  class="cart"
-                  src="./images/cart.svg"
-                  alt="Корзина покупателя"
-                />
-              </a>
-            </div>
-            <a href="/">
-              <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
+    <div class="wrapper">
+    <header class="header__about">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__phone">
+            <a href="#">
+              <img class="phone" src="./images/phone.svg" />
             </a>
-            <div class="header__burger">
-              <span></span>
-            </div>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li class="header__list-item">
-                  <a class="header__link" href="#">Продажа</a>
-                </li>
-                <li class="header__list-item">
-                  <a class="header__link" href="#">Аренда</a>
-                </li>
-                <li class="header__list-item">
-                  <a class="header__link" href="#">Сервис</a>
-                </li>
-                <li class="header__list-item">
-                  <a class="header__link" href="./about.html">О компании</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__info">
-              <a href="#">
-                <img
-                  class="cart"
-                  src="./images/cart.svg"
-                  alt="Корзина покупателя"
-                />
-              </a>
-              <a class="link" href="#">
-                <p class="contacts">+7 (3452)500-006</p>
-              </a>
-            </div>
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+          </div>
+          <a href="/">
+            <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
+          </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="#">Продажа</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#">Аренда</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="#">Сервис</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./about.html">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+            <a class="link" href="#">
+              <p class="contacts">+7 (3452)500-006</p>
+            </a>
           </div>
         </div>
-        <div class="title__container">
-          <h1 class="title__about">кто такие barserviСe?</h1>
+      </div>
+      <div class="title__container">
+        <h1 class="title__about">кто такие barserviСe?</h1>
+      </div>
+      <img
+        src="./images/aboutteam.png"
+        alt="Команда Bar-Service"
+        class="about__team"
+      />
+    </header>
+    <!-- Услуги -->  
+    <section class="services">
+      <div class="block__title-container1">
+        <div class="block__title-container2">
+          <span class="red-line"></span>
+          <h2 class="container__title">Мы любим кофе:</h2>
         </div>
-        <img
-          src="./images/aboutteam.png"
-          alt="Команда Bar-Service"
-          class="about__team"
-        />
-      </header>
-    </div>
+      </div>
+      <div class="service__cards service__cards-about-static">
+        <div class="card__item">
+          <div class="service__card service__card-static">
+            <h3 class="service__title">Собственный учебный центр</h3>
+            <p class="service__description">
+              который действует с 2005 года, именно
+            </p>
+            <p class="service__description">
+              мы формировали уровень барной и кофейной индустрии в нашем городе.
+            </p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="service__card">
+            <h3 class="service__title">Собственный сервисный центр</h3>
+            <p class="service__description">
+              Квалифицированные инженеры быстро и качественно
+            </p>
+            <p class="service__description">
+              произведут ремонт кофейного оборудования любой сложности
+            </p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="service__card">
+            <h3 class="service__title">Собственное производство</h3>
+            <p class="service__description">
+              Кофе, чая и пищевого льда. Мы производим продукцию, только на
+              самом лучшем оборудовании и
+            </p>
+            <p class="service__description">
+              используем только качественное и дорогое сырье.
+            </p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="service__card">
+            <h3 class="service__title">Лучшая команда профессионалов</h3>
+            <p class="service__description">
+              В нашей команде лучшие специалисты в каждой области.
+            </p>
+            <p class="service__description">
+              К примеру у нашего обжарщика опыт работы составляет 20 лет и
+              проходила обучение в Италии.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Услуги мобильный слайдер -->  
+      <div class="service__cards service__cards-about-slider">
+        <div class="about__mobile-slider">
+        <div class="card__item ">
+          <div class="service__card service__card-about slider__item">
+            <h3 class="service__title">Собственный учебный центр</h3>
+            <p class="service__description">
+              который действует с 2005 года, именно
+            </p>
+            <p class="service__description">
+              мы формировали уровень барной и кофейной индустрии в нашем городе.
+            </p>
+          </div>
+        </div>
+        <div class="card__item slider__item">
+          <div class="service__card service__card-about">
+            <h3 class="service__title">Собственный сервисный центр</h3>
+            <p class="service__description">
+              Квалифицированные инженеры быстро и качественно
+            </p>
+            <p class="service__description">
+              произведут ремонт кофейного оборудования любой сложности
+            </p>
+          </div>
+        </div>
+        <div class="card__item slider__item">
+          <div class="service__card service__card-about">
+            <h3 class="service__title">Собственное производство</h3>
+            <p class="service__description">
+              Кофе, чая и пищевого льда. Мы производим продукцию, только на
+              самом лучшем оборудовании и
+            </p>
+            <p class="service__description">
+              используем только качественное и дорогое сырье.
+            </p>
+          </div>
+        </div>
+        <div class="card__item slider__item">
+          <div class="service__card service__card-about">
+            <h3 class="service__title">Лучшая команда профессионалов</h3>
+            <p class="service__description">
+              В нашей команде лучшие специалисты в каждой области.
+            </p>
+            <p class="service__description">
+              К примеру у нашего обжарщика опыт работы составляет 20 лет и
+              проходила обучение в Италии.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Наши клиенты -->
+    <section class="ourclients">
+      <div class="block__title-container1 block__title-container1-about">
+        <div class="block__title-container2 block__title-container2-about">
+          <span class="red-line"></span>
+          <h2 class="container__title container__title-ourclients">наши клиенты</h2>
+        </div>
+        <nav class="about__menu">
+          <ul class="header__list about__list">
+            <li class="header__list-item about__list-item">
+              <a class="header__link header__link-about" href="#">Продажа</a>
+            </li>
+            <li class="header__list-item about__list-item">
+              <a class="header__link header__link-about" href="#">Аренда</a>
+            </li>
+            <li class="header__list-item about__list-item">
+              <a class="header__link header__link-about" href="#">Сервис</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </section>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

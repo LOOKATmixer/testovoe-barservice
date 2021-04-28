@@ -5,7 +5,7 @@
 }
 
 .title__container {
-  max-width: 1300px;
+  max-width: 1360px;
   display: flex;
 }
 
@@ -19,25 +19,84 @@
   text-align: center;
 }
 
+/* Услуги */
+
+.service__cards.service__cards-about-slider {
+  display: none;
+}
+
+/* Наши Клиенты */
+.ourclients {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__link-about {
+  font-size: 30px;
+  letter-spacing: 0.25em;
+  line-height: 31px;
+}
+
+.header__link-about:hover {
+  color: #fb4f50;
+}
+
 @media screen and (max-width: 1023px) {
-  .title__container {
-    max-width: 1300px;
+  .container__title-ourclients {
     display: flex;
     justify-content: center;
+    padding: 0;
   }
 
   .title__about {
-    font-size: 46px;
+    font-size: 56px;
     letter-spacing: 0.025em;
     line-height: 48px;
     text-transform: uppercase;
     margin: 0 auto;
     padding: 0 40px;
   }
+
+  .header__about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url('../images/background.jpg');
+  }
+
+  /* Наши Клиенты */
+
+  .block__title-container1-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__list-item {
+    margin: 36px 8px 46px;
+  }
+
+  .header__link-about {
+    font-size: 22px;
+    letter-spacing: 0.25em;
+    line-height: 22px;
+  }
 }
 
-@media screen and (max-width: 1023px) {
-  .header__about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/background.jpg');
+@media screen and (max-width: 767px) {
+  .service__cards.service__cards-about-static {
+    display: none;
+  }
+  .service__cards.service__cards-about-slider {
+    display: block;
+  }
+
+  .service__card.service__card-about {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }

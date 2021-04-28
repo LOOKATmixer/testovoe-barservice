@@ -1,5 +1,6 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url(/vendor/normalize.css);
+@import url(/css/slick.css);
+@import url(/vendor/fonts/fonts.css);
 
 body {
   font-family: 'RF Rufo';
@@ -234,7 +235,6 @@ body {
 }
 
 .container__title {
-  position: absolute;
   margin: 0;
   font-weight: 400;
   font-size: 80px;
@@ -243,13 +243,21 @@ body {
   padding-left: 150px;
 }
 
-.block__title-container {
+.block__title-container1 {
+  margin: 0 auto;
+  max-width: 1510px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 0 0;
+}
+
+.block__title-container2 {
   position: relative;
   display: flex;
   align-items: center;
   max-width: 800px;
-  left: 72px;
-  top: 79px;
+
 }
 
 .red-line {
@@ -276,21 +284,20 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 200px auto 0;
+  margin: 70px auto 0;
+  max-width: 1360px;
 }
 
 .card__item {
   max-width: 340px;
-  width: 100%;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
 }
-
 .service__card {
   display: block;
   margin: 0 auto;
   width: 278px;
   height: 312px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .service__title {
@@ -385,7 +392,7 @@ body {
     padding-left: 20px;
   }
 
-  .block__title-container {
+  .block__title-container2 {
     position: relative;
     margin: 0;
     padding-top: 0;
@@ -530,6 +537,11 @@ body {
     height: 118px;
   }
 
+  .card__item {
+    max-width: 340px;
+    margin: 0 auto 38px;
+  }
+
   .slider__item-mobile {
     display: flex;
     justify-content: center;
@@ -563,7 +575,7 @@ body {
     max-width: 100%;
   }
 
-  .block__title-container {
+  .block__title-container2 {
     position: relative;
     left: 10px;
     top: 20px;
@@ -571,8 +583,13 @@ body {
 
   /* Услуги мобилка -------*/
 
-.service__cards {
-  margin: 90px auto 0;
-}
+  .service__title {
+    font-size: 18px;
+    line-height: 19px;
+  }
 
+  .service__description {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }
