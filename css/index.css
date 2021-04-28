@@ -1,6 +1,6 @@
-@import url(./vendor/normalize.css);
-@import url(./css/slick.css);
-@import url(./vendor/fonts/fonts.css);
+@import url(../vendor/normalize.css);
+@import url(../css/slick.css);
+@import url(../vendor/fonts/fonts.css);
 
 body {
   font-family: 'RF Rufo';
