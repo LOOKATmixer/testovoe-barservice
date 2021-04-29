@@ -64,7 +64,7 @@
 }
 
 .catalog__description {
-  max-width: 600px;
+  max-width: 620px;
   font-family: 'Montserrat';
   font-weight: 500px;
   font-size: 18px;
@@ -87,6 +87,51 @@
   padding: 30px 150px;
   background-color: #fb4f50;
   margin: 0 0 150px 147px;
+}
+
+/* ремонт */
+
+.repair {
+  background-image: url('../images/repair-background.jpg');
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.block__title-container1-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container__title-repair {
+  text-align: right;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.catalog__description-repair {
+  text-align: right;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.repair__workers {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.catalog__button-repair {
+  padding: 30px 100px;
+  margin-right: 20px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1023px) {
@@ -158,6 +203,34 @@
     align-self: center;
     padding: 30px 110px;
     margin: 0 0 108px 0;
+  }
+
+  /* ремонт */
+
+  .repair {
+    background-image: url('../images/repair-workers-mobile.png');
+    background-size: 100%;
+  }
+
+  .block__title-container1-repair {
+
+  }
+
+  .container__title-repair {
+    margin-right: 0px;
+  }
+
+  .catalog__description-repair {
+    margin-right: 0px;
+  }
+
+  .repair__workers {
+    display: none;
+  }
+
+  .catalog__button-repair {
+    margin-right: 0px;
+    padding: 30px 40px;
   }
 }
 
