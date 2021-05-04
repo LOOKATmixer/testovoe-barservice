@@ -1,0 +1,232 @@
+.header__rent {
+  background-image: linear-gradient(
+      117deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 0, 1) 42%,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(0, 213, 255, 0) 100%
+    ),
+    url('../images/rent-header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 150px;
+}
+
+.block__title-container2-rent {
+  max-width: 910px;
+}
+
+.container__title-rent {
+}
+
+.rent__description {
+  max-width: 600px;
+}
+
+.rent__button {
+  padding: 20px 40px;
+}
+
+/* квиз кофемашин */
+
+.coffe-machine__quiz {
+  display: block;
+  background-image: url(../images/quiz-background.jpg);
+}
+
+.block__title-container2-quiz {
+  max-width: 1300px;
+}
+
+.quiz__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 120px auto;
+}
+
+.quiz__item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 620px;
+  margin: 20px auto;
+}
+.quiz__item-left {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 35%,
+    #fb4f50 35%,
+    #fb4f50
+  );
+}
+.quiz__item-right {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 65%,
+    #fb4f50 65%,
+    #fb4f50
+  );
+}
+.quiz__item_image {
+  padding: 26px 21px;
+}
+
+.quiz__container_buttons {
+  max-width: 1028px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 80px;
+}
+
+.button__yes {
+  margin: 0;
+  padding: 25px 90px;
+}
+.quiz__question {
+  margin: 0;
+  padding: 0;
+}
+.button__no {
+  background-color: #969292;
+  margin: 0;
+  padding: 25px 90px;
+}
+
+/* прогресс квиза */
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+progress {
+  border: 0;
+  max-width: 1000px;
+  width: 100%;
+  height: 26px;
+
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+}
+progress::-webkit-progress-bar {
+  max-width: 1000px;
+  width: 100%;
+  height: 26px;
+
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+}
+progress::-webkit-progress-value {
+  border-radius: 4px;
+  background: #fb4f50;
+}
+progress::-moz-progress-bar {
+  border-radius: 4px;
+  background: #fb4f50;
+}
+
+.progress__description {
+  color: #969292;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* каталог кофемашин */
+
+.coffe-machine__catalog {
+  background-size: cover;
+  background-image: url(../images/background-coffemachine-catalog.jpg);
+}
+
+.block__title-container1-coffe-machine__catalog {
+}
+
+.coffe-machine__catalog-flex {
+  max-width: 1210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  display: flex;
+  align-items: start;
+  margin: 82px auto 182px;
+}
+
+.desktop-slider-rent {
+
+}
+
+.coffe-machine__catalog_menu {
+}
+
+.coffe-machine__catalog_list {
+  list-style: none;
+  padding: 0;
+}
+
+.coffe-machine__catalog_item {
+  margin: 0 0 29px 0;
+  position: relative;
+}
+
+.coffe-machine__catalog_link {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  transition: color 0.2s linear;
+}
+.coffe-machine__catalog_link:hover {
+  color: #fb4f50;
+}
+
+
+.card__rent {
+  background: rgba(255, 255, 255, 0.2);
+  width: 267px;
+  height: 273px;
+}
+
+.card__rent_image {
+  width: 172px;
+  height: 167px;
+  margin: 30px auto 12px;
+}
+
+.card__rent_title {
+  text-align: center;
+
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.link__rent_item {
+  
+}
+
+@media screen and (max-width: 767px) {
+  .header__rent {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 150px;
+  }
+
+  .rent__description {
+    max-width: 300px;
+  }
+}

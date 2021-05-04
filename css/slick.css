@@ -8,6 +8,10 @@
   opacity: 0.2;
 }
 
+.slider__item.card__rent {
+  opacity: 1;
+}
+
 .slider__item.card__item {
   opacity: 1;
   
@@ -192,9 +196,9 @@
   }
 
   .slider .slick-arrow.slick-next {
-    top: 84%;
+    top: 65%;
     z-index: 1;
-    right: 18%;
+    right: 16%;
     font-size: 0;
     width: 12px;
     height: 28px;

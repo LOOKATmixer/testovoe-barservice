@@ -1,0 +1,145 @@
+.header__service {
+  display: block;
+  background-image: url('../images/service-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.price-service {
+  background-image: url('../images/price-background.jpg');
+}
+
+.price-service__content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* слайдер */
+
+
+
+/* таблица */
+
+.price-service__table {
+  margin: 46px auto 108px;
+}
+
+.price-service__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.price-service__title {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-left: 20px;
+}
+
+.price-service__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 487px;
+}
+
+.price-service__price {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.price-service__button {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+
+  color: #fff;
+  text-decoration: none;
+  border-radius: 55px;
+  padding: 15px 45px;
+  margin-right: 20px;
+  background-color: #fb4f50;
+}
+
+.price-service__button:hover {
+  box-shadow: 20px 20px 20px rgba(251, 79, 80, 0.2);
+}
+
+.price__main-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price__main-button {
+  margin: 50px 0 0 0;
+}
+
+.catalog__button.price-service__button {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .price-service__info {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__service {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 150px;
+  }
+/* слайдер */
+
+
+
+/* таблица */
+
+  .price-service__table {
+    margin: 46px auto 30px;
+}
+
+  .price-service__info {
+    width: 120px;
+    justify-content: flex-end;
+  }
+
+  .price-service__price {
+    padding-right: 20px;
+  }
+
+  .price-service__button {
+    display: none;
+  }
+
+  .catalog__button.price-service__button {
+    display: block;
+    padding: 20px 60px;
+    margin-right: 0;
+  }
+
+  .price__main-button {
+    margin-bottom: 22px;
+    padding: 20px 60px;
+    color: #000;
+    background-color: #fff;
+  }
+}

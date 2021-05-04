@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/rent.css" />
+    <title>Аренда</title>
+  </head>
+  <body>
+    <header class="header__about header__rent">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__phone">
+            <a href="#">
+              <img class="phone" src="./images/phone.svg" />
+            </a>
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+          </div>
+          <a href="/">
+            <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
+          </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="./sale.html">Продажа</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./rent.html">Аренда</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./service.html">Сервис</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./about.html">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+            <a class="link" href="#">
+              <p class="contacts">+7 (3452)500-006</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="rent">
+        <div class="block__title-container1 block__title-container1-catalog">
+          <div class="block__title-container2 block__title-container2-rent">
+            <h2 class="container__title container__title-catalog container__title-rent">
+              Бесплатная аренда кофемашины для <br>ресторана и офиса в Тюмени</br>
+            </h2>
+          </div>
+          <p class="catalog__description rent__description">
+            Нет необходимости покупать кофемашину, вникать в модельный ряд и
+            технические характеристики оборудования, искать подрядчика по
+            ремонту и обслуживанию, следить за качеством получаемого кофейного
+            напитка. Все эти обязанности берет на себя компания Bar Service.
+          </p>
+
+          <!-- взять из старого сайта -->
+          <div class="button__container">
+            <a href="#" class="catalog__button rent__button">ВЗЯТЬ ИЗ СТАРОГО САЙТА</a>
+            <div class="askus__form__input barInput field" data-code="fio" data-title="Имя клиента" data-required="1">
+              <input type="text" placeholder="Ваше имя" class="formItem">
+            </div>
+            <div class="askus__form__input barInput field" data-code="fio" data-title="Телефон" data-required="1" data-validate="phone">
+              <input class="j-phone-mask formItem" type="text" placeholder="Ваш телефон">
+            </div>  
+            <div class="barModal--checkbox">
+              <div class="field" data-required="1" data-title="Согласие на обработку данных" data-prompt="Для отправки формы необходимо согласие на обработку персональных данных" style="text-align: left; padding: 10px 0px; margin-bottom: 10px;">
+              <input class="difback-agree-checkbox formItem" type="checkbox" value="Да" checked>
+              <p>
+                Согласен на обработку <a href="/agreement/" style='color: #fff;' target="_blank">персональных данных</a>
+              </p>
+            <div class="prompt"></div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- квиз блок -->
+      <section class="coffe-machine__quiz">
+        <div class="block__title-container1 block__title-container1-catalog">
+          <div class="block__title-container2 block__title-container2-quiz">
+            <span class="red-line red-line-quiz"></span>
+            <h2 class="container__title container__title-catalog">
+              Помощник подбора кофемашины
+            </h2>
+            <!-- селекторы старого сайта (не занесы в css) -->
+            <div class="about_us__slider-item__info__num c-style_display_flex c-style_align-items_flex-end">
+              <div class="about_us__slider-item__info__num__index">
+                  1                      
+              </div>
+              <div class="about_us__slider-item__info__num__amount">
+                  / 6                      
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz__container">
+          <div class="quiz__item quiz__item-left">
+            <div class="quiz__item_image"><img src="./images/quiz-item1.jpg" alt="кофемашина" class="quiz__image"></div>
+            <div class="quiz__item_image"><img src="./images/quiz-item2.jpg" alt="кофемашина" class="quiz__image"></div>
+          </div>
+          <div class="quiz__item quiz__item-right">
+            <div class="quiz__item_image"><img src="./images/quiz-item3.jpg" alt="кофемашина" class="quiz__image"></div>
+            <div class="quiz__item_image"><img src="./images/quiz-item4.jpg" alt="кофемашина" class="quiz__image"></div>
+          </div>
+        </div>
+        <div class="quiz__container_buttons">
+          <a href="#" class="catalog__button rent__button button__yes">да</a>
+          <p class="catalog__description rent__description quiz__question">С функцией приготовления капучино с кнопки ?</p>
+          <a href="#" class="catalog__button rent__button button__no">нет</a>
+        </div>
+        <div class="progress">
+          <progress max="100" value="60"></progress>
+          <p class="progress__description">Прогресс ответов на квиз 3 из 5</p>
+        </div>
+      </section>
+      <!-- каталог кофемашин -->
+      <section class="coffe-machine__catalog">
+        <div class="block__title-container1 block__title-container1-coffe-machine__catalog">
+          <div class="block__title-container2 block__title-container2-about">
+            <h2 class="container__title container__title-ourclients">Каталог кофемашин 
+              для аренды</h2>
+          </div>
+        </div>
+        <!-- Десктопная версия +слайдер -->
+        <div class="">
+          <div class=" coffe-machine__catalog-flex">
+            <nav class="coffe-machine__catalog_menu">
+              <ul class="coffe-machine__catalog_list">
+                <li class="coffe-machine__catalog_item">
+                  <a class="link coffe-machine__catalog_link" href="#">Профессиональные</a>
+                </li>
+                <li class="coffe-machine__catalog_item">
+                  <a class="link coffe-machine__catalog_link" href="#">Автоматические</a>
+                </li>
+                <li class="coffe-machine__catalog_item">
+                  <a class="link coffe-machine__catalog_link" href="#">Кофемолки</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="desktop-slider-rent">
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/automatic.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Автоматические</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/rozhkovie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Рожковые</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/kapsulnie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Капсульные</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/automatic.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Автоматические</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/rozhkovie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Рожковые</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/kapsulnie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Капсульные</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Мобильная версия +слайдер -->
+        <div class="mobile-slider-rent">
+
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

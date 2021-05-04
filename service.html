@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/rent.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <title>Сервис</title>
+  </head>
+  <body>
+    <header class="header__about header__rent header__service">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__phone">
+            <a href="#">
+              <img class="phone" src="./images/phone.svg" />
+            </a>
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+          </div>
+          <a href="/">
+            <img class="header__logo" src="./images/logo.svg" alt="Логотип" />
+          </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link" href="./sale.html">Продажа</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./rent.html">Аренда</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./service.html">Сервис</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./about.html">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <a href="#">
+              <img
+                class="cart"
+                src="./images/cart.svg"
+                alt="Корзина покупателя"
+              />
+            </a>
+            <a class="link" href="#">
+              <p class="contacts">+7 (3452)500-006</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="rent">
+        <div class="block__title-container1 block__title-container1-catalog">
+          <div class="block__title-container2 block__title-container2-rent">
+            <h2
+              class="container__title container__title-catalog container__title-rent"
+            >
+              Профессиональный ремонт кофемашин в Тюмени
+            </h2>
+          </div>
+          <p class="catalog__description rent__description">
+            Мы специализируемся на ремонте только кофейного оборудования, от
+            бытовой, домашней кофемашины, до профессионального ресторанного
+            оборудования.
+          </p>
+
+          <!-- взять из старого сайта -->
+          <div class="button__container">
+            <a href="#" class="catalog__button rent__button"
+              >ВЗЯТЬ ИЗ СТАРОГО САЙТА</a
+            >
+            <div
+              class="askus__form__input barInput field"
+              data-code="fio"
+              data-title="Имя клиента"
+              data-required="1"
+            >
+              <input type="text" placeholder="Ваше имя" class="formItem" />
+            </div>
+            <div
+              class="askus__form__input barInput field"
+              data-code="fio"
+              data-title="Телефон"
+              data-required="1"
+              data-validate="phone"
+            >
+              <input
+                class="j-phone-mask formItem"
+                type="text"
+                placeholder="Ваш телефон"
+              />
+            </div>
+            <div class="barModal--checkbox">
+              <div
+                class="field"
+                data-required="1"
+                data-title="Согласие на обработку данных"
+                data-prompt="Для отправки формы необходимо согласие на обработку персональных данных"
+                style="text-align: left; padding: 10px 0px; margin-bottom: 10px"
+              >
+                <input
+                  class="difback-agree-checkbox formItem"
+                  type="checkbox"
+                  value="Да"
+                  checked
+                />
+                <p>
+                  Согласен на обработку
+                  <a href="/agreement/" style="color: #fff" target="_blank"
+                    >персональных данных</a
+                  >
+                </p>
+                <div class="prompt"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Блок прайс -->
+      <section class="price-service">
+        <div class="block__title-container1 block__title-container1-catalog">
+          <div class="block__title-container2 block__title-container2-about">
+            <span class="red-line red-line-catalog"></span>
+            <h2 class="container__title container__title-catalog">
+              Прайс лист на ремонт кофемашин в Тюмени
+            </h2>
+          </div>
+        </div>
+        <div class="price-service__content">
+          <!-- слайдер -->
+          <div class="price-service__slider">
+            <div class="slider__item">
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/proffessionalnie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Профессиональные</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/automatic.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Автоматические</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/rozhkovie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Рожковые</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/kapsulnie.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Капсульные</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- таблица -->
+          <div class="price-service__table">
+            <div class="price-service__item">
+              <div class="price-service__title">Не варит кофе</div>
+              <div class="price-service__info">
+                <div class="price-service__price">250&#8381;</div>
+                <a href="#" class="price-service__button">заказать</a>
+              </div>
+            </div>
+            <div class="price-service__item">
+              <div class="price-service__title">Не включается</div>
+              <div class="price-service__info">
+                <div class="price-service__price">1250&#8381;</div>
+                <a href="#" class="price-service__button">заказать</a>
+              </div>
+            </div>
+            <div class="price-service__item">
+              <div class="price-service__title">Не мелет кофе</div>
+              <div class="price-service__info">
+                <div class="price-service__price">250&#8381;</div>
+                <a href="#" class="price-service__button">заказать</a>
+              </div>
+            </div>
+            <div class="price-service__item">
+              <div class="price-service__title">Не покупает кофе</div>
+              <div class="price-service__info">
+                <div class="price-service__price">5000&#8381;</div>
+                <a href="#" class="price-service__button">заказать</a>
+              </div>
+            </div>
+            <div class="price-service__item">
+              <div class="price-service__title">Не варит кофе</div>
+              <div class="price-service__info">
+                <div class="price-service__price">250&#8381;</div>
+                <a href="#" class="price-service__button">заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="price__main-buttons">
+            <a href="#" class="catalog__button price__main-button"
+              >подробный прайс</a
+            >
+            <a href="#" class="catalog__button price-service__button"
+              >заказать ремонт</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
