@@ -6,7 +6,7 @@
 
 .block__title-container2-sale {
   max-width: 1500px;
-  margin: 50px auto;
+  margin: 50px 105px;
 }
 
 .container__title-rent {
@@ -21,10 +21,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 84px auto 142px;
   padding-bottom: 22px;
-  max-width: 1300px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  max-width: 1300px;
+  margin: 0 auto 142px;
+}
+
+.chips__menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.chips__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px auto;
+  padding: 14px;
+  border-radius: 10px;
+  background-color: #443e3e;
+
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.chips__item p {
+  margin-right: 20px;
 }
 
 .sale__filter {
@@ -47,13 +76,23 @@
   width: 16px;
   height: 18px;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
 }
 
-.vertical__position {
+.horizontal__position:hover {
+  transform: scale(1.2);
+}
+
+.gallery__position {
   background-image: url('../images/vertical.svg');
   width: 18px;
   height: 18px;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.gallery__position:hover {
+  transform: scale(1.2);
 }
 
 /* основной контент */
@@ -65,7 +104,9 @@
 
 .content__menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content__title {
@@ -196,6 +237,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+}
+
+.checkbox__built-in {
+  margin-top: 35px;
 }
 
 /* стили при наведении курсора на радио */
@@ -357,4 +402,138 @@
   border: 0;
   background: #fb4f50;
   border-radius: 10px;
+}
+
+/* ------------- */
+
+.search__button {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+
+  margin: 64px auto 24px;
+  padding: 20px 60px;
+}
+
+.reset__button {
+  font-family: 'RF Rufo';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* Карточки */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 904px;
+  padding: 18px 83px 18px 26px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 40px;
+  transition: background 0.3s linear;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card__img {
+}
+
+.card__text {
+  max-width: 302px;
+}
+
+.card__title {
+  font-family: 'RF Rufo';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card__description {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a8a8aa;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 110px;
+}
+
+.card__article {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__price_new {
+  color: #fb4f50;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+.card__price_old {
+  text-decoration: line-through;
+}
+
+.card__cart {
+  padding: 8px;
+  margin-right: 7px;
+  width: 26px;
+  height: 26px;
+  background-color: #fb4f50;
+  border-radius: 50%;
+}
+
+.card__cart:hover {
+  box-shadow: 5px 15px 15px rgb(251 79 80 / 20%);
+}
+
+.card__compare {
+  padding: 8px;
+  margin-left: 7px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.card__compare:hover {
+  box-shadow: 5px 15px 15px rgb(251 79 80 / 20%);
 }

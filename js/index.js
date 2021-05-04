@@ -63,7 +63,7 @@ $(document).ready(function () {
 
   $('.polzunok-6').slider({
     min: 0,
-    max: 5.7,
+    max: 6,
     values: [0, 2],
     range: true,
     animate: 'fast',
