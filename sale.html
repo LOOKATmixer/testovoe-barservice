@@ -11,7 +11,7 @@
     <title>Продажа</title>
   </head>
   <body class="header__sale">
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header__body">
           <div class="header__phone">
@@ -63,12 +63,12 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="block__title-container1 block__title-container1-catalog">
+    <main class="header">
+      <div class="block__title-container1 block__title-container1-catalog header">
         <div class="block__title-container2 block__title-container2-sale">
           <span class="red-line"></span>
           <h2
-            class="container__title container__title-catalog container__title-rent"
+            class="container__title container__title-catalog container__title-rent container__title-sale"
           >
             Каталог кофемашин
           </h2>
@@ -101,17 +101,151 @@
         <div class="sale__filter">Сортировать:</div>
         <!-- здесь спан или шо для бургер меню  -->
         <div class="sale__position">
-          <a href="./sale.html">
             <div class="horizontal__position"></div>
-          </a>
-          <a href="./sale-gallery.html">
             <div class="gallery__position"></div>
-          </a>
         </div>
       </div>
       <!-- основной контент -->
       <section class="content">
         <div class="content__menu">
+              <!-- мобилка (изначально скрыта) -->
+              <div class="mobile__sale">
+                <div class="places">
+                  <p class="place">для дома</p>
+                  <p class="place">для офиса</p>
+                  <p class="place">для ресторана</p>
+                </div>
+                <div class="filters__mobile">
+                  <div class="filter1">
+                    <p class="filter1__text">Популярные</p>
+                    <div class="filter1__icon"></div>
+                  </div>
+                  <div class="filter2__icon"></div>
+                </div>
+              <div class="cards">
+                <div class="card card-mobile">
+                  <img
+                    src="./images/coffemachine-article.jpg"
+                    alt="кофемашина"
+                    class="card__img card__img-mobile"
+                  />
+                  <div class="card__text card__text-mobile">
+                    <h4 class="card__title card__title-mobile">       Кофемашина Jura 
+                      <br>A1 Piano White</br>
+                    </h4>
+                    <p class="card__article card__article-mobile">
+                      Артикул 15171
+                    </p>
+                  </div>
+                  <p class="card__description card__description-mobile">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="price__container-mobile">
+                  <div class="card__info card__info-mobile">
+                    <p class="card__price_old card__price_old-mobile">Старая цена 59990 р</p>
+                    <p class="card__price_new card__price_new-mobile">57 990 &#8381;</p>
+                  </div>
+                  <div class="card__buttons card__buttons-mobile">
+                    <a href="#">
+                      <img
+                        class="card__cart"
+                        src="./images/cart.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                   <!-- <a href="#">
+                      <img
+                        class="card__compare"
+                        src="./images/compare.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                    -->
+                  </div>
+                </div>
+                </div>
+                <div class="card card-mobile">
+                  <img
+                    src="./images/coffemachine-article.jpg"
+                    alt="кофемашина"
+                    class="card__img card__img-mobile"
+                  />
+                  <div class="card__text card__text-mobile">
+                    <h4 class="card__title card__title-mobile">       Кофемашина Jura 
+                      <br>A1 Piano White</br>
+                    </h4>
+                    <p class="card__article card__article-mobile">
+                      Артикул 15171
+                    </p>
+                  </div>
+                  <p class="card__description card__description-mobile">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="price__container-mobile">
+                  <div class="card__info card__info-mobile">
+                    <p class="card__price_old card__price_old-mobile">Старая цена 59990 р</p>
+                    <p class="card__price_new card__price_new-mobile">57 990 &#8381;</p>
+                  </div>
+                  <div class="card__buttons card__buttons-mobile">
+                    <a href="#">
+                      <img
+                        class="card__cart"
+                        src="./images/cart.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                   <!-- <a href="#">
+                      <img
+                        class="card__compare"
+                        src="./images/compare.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                    -->
+                  </div>
+                </div>
+                </div>
+                <div class="card card-mobile">
+                  <img
+                    src="./images/coffemachine-article.jpg"
+                    alt="кофемашина"
+                    class="card__img card__img-mobile"
+                  />
+                  <div class="card__text card__text-mobile">
+                    <h4 class="card__title card__title-mobile">       Кофемашина Jura 
+                      <br>A1 Piano White</br>
+                    </h4>
+                    <p class="card__article card__article-mobile">
+                      Артикул 15171
+                    </p>
+                  </div>
+                  <p class="card__description card__description-mobile">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="price__container-mobile">
+                  <div class="card__info card__info-mobile">
+                    <p class="card__price_old card__price_old-mobile">Старая цена 59990 р</p>
+                    <p class="card__price_new card__price_new-mobile">57 990 &#8381;</p>
+                  </div>
+                  <div class="card__buttons card__buttons-mobile">
+                    <a href="#">
+                      <img
+                        class="card__cart"
+                        src="./images/cart.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                   <!-- <a href="#">
+                      <img
+                        class="card__compare"
+                        src="./images/compare.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                    -->
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+              <!-- закончилась мобилка -->
           <div class="content__menu_checkboxes">
             <h3 class="content__title">подбор по характеристикам</h3>
             <div class="radio">
@@ -235,8 +369,8 @@
             <a href="#" class="reset__button">Сбросить</a>
           </div>
 
-          <!-- карточки -->
-
+          <!-- карточки списком -->
+          <div class="vision__classic">
           <div class="cards">
             <div class="card">
               <img
@@ -263,13 +397,14 @@
                       alt="Корзина покупателя"
                     />
                   </a>
-                  <a href="#">
+                 <!-- <a href="#">
                     <img
                       class="card__compare"
                       src="./images/compare.svg"
                       alt="Корзина покупателя"
                     />
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -298,13 +433,14 @@
                       alt="Корзина покупателя"
                     />
                   </a>
-                  <a href="#">
+                      <!-- <a href="#">
                     <img
                       class="card__compare"
                       src="./images/compare.svg"
                       alt="Корзина покупателя"
                     />
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -333,13 +469,14 @@
                       alt="Корзина покупателя"
                     />
                   </a>
-                  <a href="#">
+                      <!-- <a href="#">
                     <img
                       class="card__compare"
                       src="./images/compare.svg"
                       alt="Корзина покупателя"
                     />
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -368,13 +505,14 @@
                       alt="Корзина покупателя"
                     />
                   </a>
-                  <a href="#">
+                      <!-- <a href="#">
                     <img
                       class="card__compare"
                       src="./images/compare.svg"
                       alt="Корзина покупателя"
                     />
                   </a>
+                  -->
                 </div>
               </div>
             </div>
@@ -403,16 +541,282 @@
                       alt="Корзина покупателя"
                     />
                   </a>
-                  <a href="#">
+                 <!-- <a href="#">
                     <img
                       class="card__compare"
                       src="./images/compare.svg"
                       alt="Корзина покупателя"
                     />
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
+          </div>
+          </div>
+          <!-- карточки плиткой -->
+          <div class="vision__gallery">
+            <div class="cards cards__gallery">
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__gallery">
+                <img
+                  src="./images/coffemachine-article.jpg"
+                  alt="кофемашина"
+                  class="card__img"
+                />
+                <div class="card__text">
+                  <h4 class="card__title card__title_gallery">Кофемашина Jura 
+                    <br>A1 Piano White</br>
+                    </h4>
+                  <p class="card__description card__description_gallery">Ультра-компактная кофемашина, рассчитанная на приготовление 1 чашки кофе, создавалась не только для того, чтобы сдел
+                  </p>
+                  <div class="card__info card__info_gallery">
+                    <p class="card__price_new card__price_new_gallery">57 990 &#8381;</p>
+                    <div class="card__buttons">
+                      <a href="#">
+                        <img
+                          class="card__cart card__cart_gallery"
+                          src="./images/cart.svg"
+                          alt="Корзина покупателя"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </section>

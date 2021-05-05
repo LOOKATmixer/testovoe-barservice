@@ -190,8 +190,6 @@ body {
 .card__description {
   padding-left: 28px;
   padding-right: 30px;
-  --max-lines: 3;
-  max-height: 90px;
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: 'Montserrat';

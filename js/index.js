@@ -1,5 +1,14 @@
 $(document).ready(function () {
+
+
   $(window).resize(function () {
+    if ($(window).width() <= 1023) {
+      $('.vision__classic').hide();
+      $('.vision__gallery').show();
+    } if ($(window).width() <= 767) {
+      $('.vision__classic').hide();
+      $('.vision__gallery').hide();
+    }
     $('.slider').slick('refresh');
   });
 
@@ -114,8 +123,19 @@ $(document).ready(function () {
   });
 
 
-  //слайдеры
+  //переключение каталога на список или плитку
+  $('.vision__gallery').hide();
+  $('.gallery__position').click(function () {
+    $('.vision__classic').hide();
+    $('.vision__gallery').show();
+  });
+  $('.horizontal__position').click(function () {
+    $('.vision__gallery').hide();
+    $('.vision__classic').show();
+  });
 
+
+  //слайдеры
   $('.main__desktop-slider').slick({
     adaptiveHeight: true,
     slidesToShow: 3,
