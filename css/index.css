@@ -513,13 +513,13 @@ body {
   .header__burger.active:before {
     transform: rotate(45deg);
     top: 7px;
-    z-index: 4;
+    z-index: 3;
   }
   .header__burger.active:after {
     transform: rotate(-45deg);
     width: 100%;
     bottom: 7px;
-    z-index: 4;
+    z-index: 3;
   }
   .header__burger.active span {
     transform: scale(0);

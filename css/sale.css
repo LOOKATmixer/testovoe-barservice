@@ -869,8 +869,14 @@
     transition: color 0.2s ease-in;
   }
 
+  .link-burger-mobile-static {
+    color:#fb4f50;
+    cursor: default;
+  }
+
   .link-burger-mobile:hover {
     color: #fb4f50;
+    cursor: pointer;
   }
 
   .checkbox__brand_title-burger-mobile {
