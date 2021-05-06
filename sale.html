@@ -98,8 +98,18 @@
           </div>
         </div> -->
         <div class="sale__menu">
-        <div class="sale__filter">Сортировать:</div>
-        <!-- здесь спан или шо для бургер меню  -->
+
+        <div class="dropdown">
+         <div class="sale__filter">Сортировать: <button onclick="myFunction()" class="sale__filter dropbtn"></button></div>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#">По популярности</a>
+              <a href="#">По возрастанию цены</a>
+              <a href="#">По убыванию цены</a>
+              <a href="#">По рейтингу</a>
+            </div>
+          </div>
+
         <div class="sale__position">
             <div class="horizontal__position"></div>
             <div class="gallery__position"></div>
@@ -245,6 +255,165 @@
                 </div>
               </div>
             </div>
+            <!-- фильтры бургер -->
+          <div class="content__menu_checkboxes burger">
+            <header class="header">
+              <div class="container">
+                <div class="header__body header__body-burger-mobile">
+                  <div class="header__phone header__phone-burger-mobile">
+                    <a href="#">
+                      <img class="phone" src="./images/phone.svg" />
+                    </a>
+                    <a href="#">
+                      <img
+                        class="cart"
+                        src="./images/cart.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="header__burger header__burger-burger-mobile">
+                    <span></span>
+                  </div>
+                  <nav class="header__menu">
+                    <ul class="header__list">
+                      <li class="header__list-item">
+                        <a class="header__link" href="./sale.html">Продажа</a>
+                      </li>
+                      <li class="header__list-item">
+                        <a class="header__link" href="./rent.html">Аренда</a>
+                      </li>
+                      <li class="header__list-item">
+                        <a class="header__link" href="./service.html">Сервис</a>
+                      </li>
+                      <li class="header__list-item">
+                        <a class="header__link" href="./about.html">О компании</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__info">
+                    <a href="#">
+                      <img
+                        class="cart"
+                        src="./images/cart.svg"
+                        alt="Корзина покупателя"
+                      />
+                    </a>
+                    <a class="link" href="#">
+                      <p class="contacts">+7 (3452)500-006</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="content__title content__title-burger-mobile">
+              <a href="#" class="link link-burger-mobile">фильтры</a>
+              <a class="link link-burger-mobile link-burger-mobile-j">отмена</a>
+            </div>
+            <div class="radio checkbox__brand radio-burger-mobile">
+              <h3 class="checkbox__brand_title checkbox__brand_title-burger-mobile">Бренд</h3>
+              <input
+                class="custom-checkbox"
+                name="brand"
+                id="kraffit"
+                type="checkbox"
+              />
+              <label for="kraffit" class="checkbox__container"> Kraffit </label>
+              <input
+                class="custom-checkbox"
+                name="brand"
+                id="jura"
+                type="checkbox"
+              />
+              <label for="jura" class="checkbox__container"> Jura </label>
+              <input
+                class="custom-checkbox"
+                name="brand"
+                id="nivona"
+                type="checkbox"
+              />
+              <label for="nivona" class="checkbox__container"> Nivona </label>
+            </div>
+            <div class="radio checkbox__brand radio-burger-mobile">
+              <h3 class="checkbox__brand_title checkbox__brand_title-burger-mobile">Тип кофемашины</h3>
+              <input
+                class="custom-checkbox"
+                name="type"
+                id="one"
+                type="checkbox"
+              />
+              <label for="one" class="checkbox__container">
+                Одногруппная
+              </label>
+              <input
+                class="custom-checkbox"
+                name="type"
+                id="two"
+                type="checkbox"
+              />
+              <label for="two" class="checkbox__container">
+                Двухгруппная
+              </label>
+            </div>
+            <div class="radio radio-burger-mobile">
+              <div class="polzunok-container-5">
+                <h3 class="checkbox__brand_title polzunok__title checkbox__brand_title-burger-mobile">Цена руб:</h3>
+                <input type="text" class="polzunok-input-5-left" />
+                <input type="text" class="polzunok-input-5-right" />
+                <div class="polzunok-5"></div>
+              </div>
+              <div class="polzunok-container-6">
+                <h3 class="checkbox__brand_title polzunok__title checkbox__brand_title-burger-mobile">Объем, л:</h3>
+                <input type="text" class="polzunok-input-6-left" />
+                <input type="text" class="polzunok-input-6-right" />
+                <div class="polzunok-6"></div>
+              </div>
+            </div>
+            <div class="radio radio-burger-mobile">
+              <h3 class="checkbox__brand_title checkbox__brand_title-burger-mobile">Тип кофемашины</h3>
+              <input class="custom-radio" name="metod" id="auto" type="radio" />
+              <label for="auto" class="checkbox__container">
+                Автоматическая
+              </label>
+              <input class="custom-radio" name="metod" id="kaps" type="radio" />
+              <label for="kaps" class="checkbox__container"> Капсульная </label>
+              <input
+                class="custom-radio"
+                name="metod"
+                id="combi"
+                type="radio"
+              />
+              <label for="combi" class="checkbox__container">
+                Комбинированная
+              </label>
+            </div>
+            <div class="radio checkbox__built-in radio-burger-mobile">
+              <h3 class="checkbox__brand_title checkbox__brand_title-burger-mobile">дополнительно</h3>
+              <input
+                class="custom-checkbox"
+                name="type"
+                id="built-in"
+                type="checkbox"
+              />
+              <label for="built-in" class="checkbox__container">
+                Встроенная кофемолка
+              </label>
+              <input
+                class="custom-checkbox"
+                name="type"
+                id="kapuchinator"
+                type="checkbox"
+              />
+              <label for="kapuchinator" class="checkbox__container">
+                Капучинатор
+              </label>
+            </div>
+            <div class="buttons-burger-mobile">
+              <a href="#" class="catalog__button search__button">применить</a>
+              <a href="#" class="reset__button">Сбросить</a>
+            </div>
+          </div>
               <!-- закончилась мобилка -->
           <div class="content__menu_checkboxes">
             <h3 class="content__title">подбор по характеристикам</h3>

@@ -8,14 +8,6 @@
   opacity: 0.2;
 }
 
-.slider__item.card__rent {
-  opacity: 1;
-}
-
-.slider__item.card__item {
-  opacity: 1;
-  
-}
 
 .slider__item.slick-active {
   opacity: 1;

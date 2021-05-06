@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 
   $(window).resize(function () {
+
     if ($(window).width() <= 1023) {
       $('.vision__classic').hide();
       $('.vision__gallery').show();
@@ -16,6 +17,69 @@ $(document).ready(function () {
     $('.header__burger,.header__menu').toggleClass('active');
   });
 
+  $('.filter2__icon').click(function (event) {
+    $('.content__menu_checkboxes' + '.burger').css({'display' : 'block'});
+    $('.content__menu_checkboxes' + '.burger').addClass('content__menu_checkboxes-mobile');
+    $('body').addClass('lock');
+  });
+
+  $('.link-burger-mobile-j').click(function (event) {
+    $('.content__menu_checkboxes' + '.burger').css({'display' : 'none'});
+    $('.content__menu_checkboxes' + '.burger').removeClass('content__menu_checkboxes-mobile');
+    $('body').removeClass('lock');
+  });
+ 
+ //слайдеры
+ $('.main__desktop-slider').slick({
+  adaptiveHeight: true,
+  slidesToShow: 3,
+  //autoplay: false,
+  //autoplaySpeed: 1500,
+  draggable: false,
+  centerMode: true,
+  variableWidth: true,
+  rows: 1,
+});
+
+$('.main__mobile-slider').slick({
+  adaptiveHeight: true,
+  slidesToShow: 3,
+  //autoplay: false,
+  //autoplaySpeed: 1500,
+  draggable: false,
+  autoplay: false,
+  centerMode: false,
+  variableWidth: false,
+  rows: 1,
+});
+
+$('.about__mobile-slider').slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 1,
+  infinite: false,
+  //autoplay: false,
+  //autoplaySpeed: 1500,
+  draggable: false,
+  centerMode: true,
+  variableWidth: false,
+  fade: true,
+});
+
+$('.desktop-slider-rent').slick({
+  adaptiveHeight: true,
+  slidesToShow: 3,
+  //autoplay: false,
+  //autoplaySpeed: 1500,
+  draggable: false,
+  autoplay: false,
+  centerMode: false,
+  variableWidth: false,
+  rows: 2,
+});
+ 
+ 
+ 
   // ползунок карточки
 
   $('.polzunok-5').slider({
@@ -135,52 +199,24 @@ $(document).ready(function () {
   });
 
 
-  //слайдеры
-  $('.main__desktop-slider').slick({
-    adaptiveHeight: true,
-    slidesToShow: 3,
-    //autoplay: false,
-    //autoplaySpeed: 1500,
-    draggable: false,
-    centerMode: true,
-    variableWidth: true,
-    rows: 1,
-  });
-
-  $('.main__mobile-slider').slick({
-    adaptiveHeight: true,
-    slidesToShow: 3,
-    //autoplay: false,
-    //autoplaySpeed: 1500,
-    draggable: false,
-    autoplay: false,
-    centerMode: false,
-    variableWidth: false,
-    rows: 1,
-  });
-
-  $('.about__mobile-slider').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 1,
-    infinite: false,
-    //autoplay: false,
-    //autoplaySpeed: 1500,
-    draggable: false,
-    centerMode: true,
-    variableWidth: false,
-    fade: true,
-  });
-
-  $('.desktop-slider-rent').slick({
-    adaptiveHeight: true,
-    slidesToShow: 3,
-    //autoplay: false,
-    //autoplaySpeed: 1500,
-    draggable: false,
-    autoplay: false,
-    centerMode: false,
-    variableWidth: false,
-    rows: 2,
-  });
+  
 });
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+      if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+      } else {
+          a[i].style.display = "none";
+      }
+  }
+}

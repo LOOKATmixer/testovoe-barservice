@@ -56,6 +56,8 @@
   margin-right: 20px;
 }
 
+/* -----------всплывайка----------- */
+
 .sale__filter {
   font-family: 'Montserrat';
   font-size: 16px;
@@ -64,6 +66,51 @@
   line-height: 24px;
   padding-left: 40px;
 }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* ----------------- */
 
 .sale__position {
   display: flex;
@@ -304,7 +351,7 @@
   border-radius: 50%;
   border: 4px solid #fff;
   background: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 .polzunok-container-5 .ui-slider .ui-slider-handle:hover,
 .polzunok-container-5 .ui-slider .ui-slider-handle:focus {
@@ -369,7 +416,7 @@
   border-radius: 50%;
   border: 4px solid #fff;
   background: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 .polzunok-container-6 .ui-slider .ui-slider-handle:hover,
 .polzunok-container-6 .ui-slider .ui-slider-handle:focus {
@@ -596,6 +643,11 @@
   display: none;
 }
 
+.content__menu_checkboxes.burger {
+  display: none;
+}
+
+
 @media screen and (max-width: 1227px) {
   .sale__position {
     display: none;
@@ -612,6 +664,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .header__sale {
     background-image: none;
   }
@@ -742,7 +798,6 @@
   }
 
   .card__article-mobile {
-
   }
 
   .card__description-mobile {
@@ -764,5 +819,89 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+  }
+
+  /* фильтры бургер */
+
+  .header__body-burger-mobile {
+    padding: 0;
+  }
+
+  .header__burger-burger-mobile {
+    top: 30px;
+    right: 30px;
+  }
+
+  .header__phone-burger-mobile {
+    top: 30px;
+    left: 30px;
+  }
+
+  .content__menu_checkboxes-mobile {
+    background-image: url('../images/background.jpg');
+    display: block;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-left: 0;
+    z-index: 3;
+  }
+
+  .content__title-burger-mobile {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 58px auto 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .link-burger-mobile {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    padding: 12px 20px 12px 0;
+    transition: color 0.2s ease-in;
+  }
+
+  .link-burger-mobile:hover {
+    color: #fb4f50;
+  }
+
+  .checkbox__brand_title-burger-mobile {
+    font-family: 'RF Rufo';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+  }
+
+  .radio-burger-mobile {
+    border: none;
+  }
+
+  .polzunok-input-5-left,
+  .polzunok-input-5-right,
+  .polzunok-input-6-left,
+  .polzunok-input-6-right {
+    width: 48%;
+  }
+
+  .buttons-burger-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search__button {
+    padding: 20px 100px;
   }
 }
