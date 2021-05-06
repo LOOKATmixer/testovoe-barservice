@@ -855,7 +855,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     margin: 58px auto 28px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -865,7 +865,7 @@
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0.025em;
-    padding: 12px 20px 12px 0;
+    padding: 12px 20px;
     transition: color 0.2s ease-in;
   }
 

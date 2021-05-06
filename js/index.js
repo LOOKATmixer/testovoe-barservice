@@ -77,8 +77,32 @@ $('.desktop-slider-rent').slick({
   variableWidth: false,
   rows: 2,
 });
+
+// слайдеры карточки товара
+
+$('.card__slider_big').slick({
+  arrows: false,
+  fade: true,
+  infinite: true,
+  asNavFor:".card__slider"
+});
  
+$('.card__slider').slick({
+  arrows: true,
+  slidesToShow: 4,
+  asNavFor:".card__slider_big"
+});
+
+$('.card__slider_mobile').slick({
+  arrows: false,
+  slidesToShow: 1,
+  infinite: true,
+  centerMode: true,
+  variableWidth: true,
+});
  
+
+//------------------------
  
   // ползунок карточки
 
