@@ -100,6 +100,7 @@
     <main>
       <!-- квиз блок -->
       <section class="coffe-machine__quiz">
+        <div class="container">
         <div class="block__title-container1 block__title-container1-catalog">
           <div class="block__title-container2 block__title-container2-quiz">
             <span class="red-line red-line-quiz"></span>
@@ -119,12 +120,12 @@
         </div>
         <div class="quiz__container">
           <div class="quiz__item quiz__item-left">
-            <div class="quiz__item_image"><img src="./images/quiz-item1.jpg" alt="кофемашина" class="quiz__image"></div>
-            <div class="quiz__item_image"><img src="./images/quiz-item2.jpg" alt="кофемашина" class="quiz__image"></div>
+            <img src="./images/quiz-item1.jpg" alt="кофемашина" class="quiz__item_image">
+            <img src="./images/quiz-item2.jpg" alt="кофемашина" class="quiz__item_image">
           </div>
           <div class="quiz__item quiz__item-right">
-            <div class="quiz__item_image"><img src="./images/quiz-item3.jpg" alt="кофемашина" class="quiz__image"></div>
-            <div class="quiz__item_image"><img src="./images/quiz-item4.jpg" alt="кофемашина" class="quiz__image"></div>
+            <img src="./images/quiz-item3.jpg" alt="кофемашина" class="quiz__item_image">
+            <img src="./images/quiz-item4.jpg" alt="кофемашина" class="quiz__item_image">
           </div>
         </div>
         <div class="quiz__container_buttons">
@@ -132,10 +133,22 @@
           <p class="catalog__description rent__description quiz__question">С функцией приготовления капучино с кнопки ?</p>
           <a href="#" class="catalog__button rent__button button__no">нет</a>
         </div>
+        <div class="quiz__container_buttons-mobile">
+          <p class="catalog__description rent__description quiz__question">С функцией приготовления капучино с кнопки ?</p>
+          <div class="progress-mobile">
+            <progress max="100" value="60"></progress>
+            <p class="progress__description">Прогресс ответов на квиз 3 из 5</p>
+          </div>
+          <div class="buttons__rent_mobile">
+            <a href="#" class="catalog__button rent__button button__yes">да</a>
+            <a href="#" class="catalog__button rent__button button__no">нет</a>
+          </div>
+        </div>
         <div class="progress">
           <progress max="100" value="60"></progress>
           <p class="progress__description">Прогресс ответов на квиз 3 из 5</p>
         </div>
+      </div>
       </section>
       <!-- каталог кофемашин -->
       <section class="coffe-machine__catalog">
@@ -146,7 +159,7 @@
           </div>
         </div>
         <!-- Десктопная версия +слайдер -->
-        <div class="">
+        <div class="desktop-rent">
           <div class=" coffe-machine__catalog-flex">
             <nav class="coffe-machine__catalog_menu">
               <ul class="coffe-machine__catalog_list">
@@ -162,7 +175,7 @@
               </ul>
             </nav>
             <div class="desktop-slider-rent">
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/automatic.png"
@@ -172,7 +185,7 @@
                   <h2 class="card__rent_title">Автоматические</h2>
                 </a>
               </div>
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/rozhkovie.png"
@@ -182,7 +195,7 @@
                   <h2 class="card__rent_title">Рожковые</h2>
                 </a>
               </div>
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/kapsulnie.png"
@@ -192,7 +205,7 @@
                   <h2 class="card__rent_title">Капсульные</h2>
                 </a>
               </div>
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/automatic.png"
@@ -202,7 +215,27 @@
                   <h2 class="card__rent_title">Автоматические</h2>
                 </a>
               </div>
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/automatic.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Автоматические</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item_rent">
+                <a href="#" class="link link__rent_item">
+                  <img
+                    src="./images/automatic.png"
+                    alt="кофемашина"
+                    class="card__rent_image"
+                  />
+                  <h2 class="card__rent_title">Автоматические</h2>
+                </a>
+              </div>
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/rozhkovie.png"
@@ -212,7 +245,7 @@
                   <h2 class="card__rent_title">Рожковые</h2>
                 </a>
               </div>
-              <div class="card__rent slider__item">
+              <div class="card__rent slider__item_rent">
                 <a href="#" class="link link__rent_item">
                   <img
                     src="./images/kapsulnie.png"
@@ -227,8 +260,44 @@
         </div>
 
         <!-- Мобильная версия +слайдер -->
-        <div class="mobile-slider-rent">
-
+        <div class="mobile-rent">
+          <div class="mobile__filter-slider-rent">
+            <div class="slider__item_rent-filter">Профессиональные</div>
+            <div class="slider__item_rent-filter">Автоматические</div>
+            <div class="slider__item_rent-filter">Кофемолки</div>
+          </div>
+          <div class="mobile-slider-rent">
+            <div class="slider__item_rent-mobile">
+              <a href="#" class="link link__rent_item">
+                <img
+                  src="./images/kapsulnie.png"
+                  alt="кофемашина"
+                  class="card__rent_image"
+                />
+                <h2 class="card__rent_title">Капсульные</h2>
+              </a>
+            </div>
+            <div class="slider__item_rent-mobile">
+              <a href="#" class="link link__rent_item">
+                <img
+                  src="./images/kapsulnie.png"
+                  alt="кофемашина"
+                  class="card__rent_image"
+                />
+                <h2 class="card__rent_title">Капсульные</h2>
+              </a>
+            </div>
+            <div class="slider__item_rent-mobile">
+              <a href="#" class="link link__rent_item">
+                <img
+                  src="./images/kapsulnie.png"
+                  alt="кофемашина"
+                  class="card__rent_image"
+                />
+                <h2 class="card__rent_title">Капсульные</h2>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

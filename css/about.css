@@ -1,7 +1,7 @@
 .header__about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('../images/header-about.jpg');
-  background-size: 100%;
+  background-size: cover;
 }
 
 .title__container {
@@ -46,6 +46,7 @@
 
 .catalog {
   background-image: url('../images/catalog-background.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   box-sizing: border-box;
@@ -99,6 +100,7 @@
 
 .repair {
   background-image: url('../images/repair-background.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
   object-fit: cover;
@@ -126,7 +128,7 @@
 
 .repair__workers {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 5%;
   max-width: 70%;
   display: block;
@@ -157,7 +159,7 @@
   }
 
   .header__about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url('../images/background.jpg');
   }
 

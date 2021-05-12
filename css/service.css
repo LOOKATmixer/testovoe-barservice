@@ -17,7 +17,42 @@
 
 /* слайдер */
 
+.service__slider {
+  margin: 48px auto;
+}
 
+.slider__item_service{
+  margin: 0 20px;
+  opacity: 0.4;
+}
+
+.slider__item_service.slick-active {
+  opacity: 1;
+  margin: 0 20px;
+}
+
+
+.service__slider .slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  font-size: 0;
+  width: 20px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.service__slider .slick-arrow.slick-prev {
+  left: 10px;
+  background: url('../images/arrow-l.svg') 0 0 / 100% no-repeat;
+}
+
+.service__slider .slick-arrow.slick-next {
+  right: 10px;
+  background: url('../images/arrow-r.svg') 0 0 / 100% no-repeat;
+}
 
 /* таблица */
 

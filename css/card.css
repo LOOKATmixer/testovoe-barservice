@@ -147,9 +147,10 @@ li {
 
 .card__info_filters {
   margin-top: 90px;
+  margin-bottom: 36px;
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  max-width: 650px;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -157,14 +158,16 @@ li {
 }
 
 .card__info_filter1,
-.card__info_filter2 {
+.card__info_filter2,
+.card__info_filter3 {
   padding-bottom: 12px;
   position: relative;
   cursor: pointer;
 }
 
 .card__info_filter1:after,
-.card__info_filter2:after {
+.card__info_filter2:after,
+.card__info_filter3:after {
   content: '';
   display: block;
   width: 100%;
@@ -178,7 +181,8 @@ li {
 }
 
 .card__info_filter1:hover:after,
-.card__info_filter2:hover:after {
+.card__info_filter2:hover:after,
+.card__info_filter3:hover:after {
   opacity: 1;
 }
 
@@ -249,12 +253,28 @@ li {
   width: 30%;
 }
 
+@media screen and (max-width: 1240px) {
+  .card__info {
+    margin-left: 20px;
+  }
+
+  .price-and-cart {
+    flex-wrap: wrap;
+  }
+
+  .card__price {
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .desktop {
     display: none;
   }
   .mobile {
     display: block;
+    width: 100vw;
+    height: 100vh;
   }
 
   .container {
@@ -325,7 +345,7 @@ li {
     color: #a8a8aa;
   }
 
-  .price-and-cart-mobile{
+  .price-and-cart-mobile {
     margin: 0 44px 48px;
     display: flex;
     justify-content: space-between;
@@ -333,16 +353,21 @@ li {
   }
 
   .card__info_title {
-    width: 100%;
+    width: 60%;
   }
 
-  .card__info_description{
+  .card__info_title::before {
+    right: calc(98% + 16px);
+    width: 28px;
+  }
+
+  .card__info_description {
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color:#a8a8aa;
+    color: #a8a8aa;
     width: 90%;
     margin: 0 16px 34px;
   }
@@ -353,38 +378,38 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color:#a8a8aa;
+    color: #a8a8aa;
     width: 96%;
     margin: 0 16px 34px;
   }
 
-  .card__info_characteristics-key{
+  .card__info_characteristics-key {
     width: 50%;
     font-size: 12px;
   }
 
-  .card__info_characteristics-value{
+  .card__info_characteristics-value {
     width: 50%;
     text-align: end;
   }
 
-  .card__info_container-others{
+  .card__info_container-others {
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    color:#a8a8aa;
+    color: #a8a8aa;
     width: 96%;
     margin: 0 16px 50px;
   }
 
-  .card__info_others-key{
+  .card__info_others-key {
     width: 70%;
     font-size: 12px;
   }
 
-  .card__info_others-value{
+  .card__info_others-value {
     width: 30%;
     text-align: end;
   }
